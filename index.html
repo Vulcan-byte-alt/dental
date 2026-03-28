@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Klinika Dentystyczna</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="navbar-inner">
+
+      <!-- Logo -->
+      <a href="#" class="navbar-logo" aria-label="Strona główna">
+        <span class="logo-text">uśmiech</span>
+        <!-- Tooth SVG accent -->
+        <svg class="logo-icon" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="14" cy="14" r="13" fill="#E8601C"/>
+          <path d="M9 10.5C9 8.567 10.567 7 12.5 7H15.5C17.433 7 19 8.567 19 10.5C19 11.74 18.37 12.83 17.42 13.48C17.8 14.17 18 14.96 18 15.8C18 18.12 16.5 20 14 20C11.5 20 10 18.12 10 15.8C10 14.96 10.2 14.17 10.58 13.48C9.63 12.83 9 11.74 9 10.5Z" fill="white"/>
+        </svg>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="navbar-links" aria-label="Główna nawigacja">
+        <a href="#o-nas" class="nav-link">O nas</a>
+        <a href="#uslugi" class="nav-link">Usługi</a>
+        <a href="#zespol" class="nav-link">Zespół</a>
+        <a href="#cennik" class="nav-link">Cennik</a>
+        <a href="#kontakt" class="nav-link">Kontakt</a>
+      </nav>
+
+      <!-- Desktop CTA + Hamburger -->
+      <div class="navbar-right">
+        <a href="#kontakt" class="btn-primary navbar-cta">Umów wizytę</a>
+        <!-- Hamburger button — mobile only -->
+        <button id="hamburger" class="hamburger-btn" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+          <!-- Hamburger icon (shown when menu closed) -->
+          <svg id="icon-open" class="hamburger-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 6H21M3 12H21M3 18H21" stroke="#1B2D5B" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <!-- Close icon (shown when menu open) -->
+          <svg id="icon-close" class="hamburger-icon hidden" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M6 6L18 18M6 18L18 6" stroke="#1B2D5B" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile dropdown menu -->
+    <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+      <nav class="mobile-nav" aria-label="Nawigacja mobilna">
+        <a href="#o-nas" class="mobile-nav-link">O nas</a>
+        <a href="#uslugi" class="mobile-nav-link">Usługi</a>
+        <a href="#zespol" class="mobile-nav-link">Zespół</a>
+        <a href="#cennik" class="mobile-nav-link">Cennik</a>
+        <a href="#kontakt" class="mobile-nav-link">Kontakt</a>
+        <div class="mobile-cta-wrap">
+          <a href="#kontakt" class="btn-primary mobile-cta">Umów wizytę</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+
+    <!-- Background video -->
+    <div class="hero-bg" aria-hidden="true">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="assets/videos/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-bg-overlay"></div>
+    </div>
+
+    <!-- Centered content -->
+    <div class="hero-content">
+
+      <!-- Glassmorphic badge pill -->
+      <div class="hero-badge">
+        <span>Stomatologia w Kaliszu i Turku</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="hero-headline">
+        Zadbamy o Twój prawdziwy<br>
+        <span class="hero-headline-accent">uśmiech</span>
+      </h1>
+
+      <!-- Subtext -->
+      <p class="hero-sub">
+        Nowoczesna klinika stomatologiczna z przyjazną atmosferą.<br>
+        Leczymy pacjentów w każdym wieku&nbsp;— bez bólu i bez stresu.
+      </p>
+
+      <!-- CTA buttons -->
+      <div class="hero-buttons">
+        <a href="#kontakt" class="btn-hero-primary">Umów wizytę</a>
+        <a href="#uslugi" class="btn-hero-outline">Poznaj nasze usługi</a>
+      </div>
+
+      <!-- Trust stats -->
+      <div class="hero-stats">
+        <span class="hero-stat">500+ zadowolonych pacjentów</span>
+        <span class="hero-stat-divider" aria-hidden="true"></span>
+        <span class="hero-stat">15 lat doświadczenia</span>
+        <span class="hero-stat-divider" aria-hidden="true"></span>
+        <span class="hero-stat">Kalisz i Turek</span>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section id="uslugi" class="services-section section-padding">
+    <div class="services-inner">
+
+      <!-- Header row: left-aligned text + decorative number -->
+      <div class="services-header">
+        <div class="services-header-text">
+          <span class="services-badge">Nasze usługi</span>
+          <h2 class="services-heading">Jesteśmy dla&nbsp;Ciebie</h2>
+          <p class="services-sub">Kompleksowa opieka stomatologiczna w jednym miejscu&nbsp;— od profilaktyki po zaawansowane zabiegi.</p>
+        </div>
+        <span class="services-deco-number" aria-hidden="true">06</span>
+      </div>
+
+      <!-- Card grid -->
+      <div class="services-grid">
+
+        <!-- 1. Implantologia -->
+        <div class="service-card">
+          <div class="service-card-img-wrap">
+            <img src="images/service-implant.webp" alt="Implantologia" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <svg class="service-icon" width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="11" y="2" width="6" height="10" rx="3" stroke="#E8601C" stroke-width="2"/>
+              <path d="M8 12h12l-2 14H10L8 12Z" stroke="#E8601C" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M11 16h6M11 20h6" stroke="#E8601C" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3 class="service-title">Implantologia</h3>
+            <p class="service-desc">Trwałe uzupełnienie braków zębowych. Implanty wyglądają i funkcjonują jak naturalne zęby.</p>
+          </div>
+        </div>
+
+        <!-- 2. Ortodoncja -->
+        <div class="service-card">
+          <div class="service-card-img-wrap">
+            <img src="images/service-orthodontics.webp" alt="Ortodoncja" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <svg class="service-icon" width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="10" width="22" height="8" rx="4" stroke="#E8601C" stroke-width="2"/>
+              <circle cx="9" cy="14" r="2" fill="#E8601C"/>
+              <circle cx="14" cy="14" r="2" fill="#E8601C"/>
+              <circle cx="19" cy="14" r="2" fill="#E8601C"/>
+              <path d="M9 14h10" stroke="#E8601C" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <h3 class="service-title">Ortodoncja</h3>
+            <p class="service-desc">Aparaty stałe i nakładkowe Invisalign. Prosty uśmiech bez kompromisów w każdym wieku.</p>
+          </div>
+        </div>
+
+        <!-- 3. Wybielanie -->
+        <div class="service-card">
+          <div class="service-card-img-wrap">
+            <img src="images/service-whitening.webp" alt="Wybielanie" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <svg class="service-icon" width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M14 3C10 3 7 6 7 9c0 2.5 1.5 5 4 7l3 4 3-4c2.5-2 4-4.5 4-7 0-3-3-6-7-6Z" stroke="#E8601C" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M10 9.5l2.5 2.5L17 7" stroke="#E8601C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="service-title">Wybielanie</h3>
+            <p class="service-desc">Profesjonalne wybielanie gabinetowe i nakładkowe. Widoczny efekt już po jednej wizycie.</p>
+          </div>
+        </div>
+
+        <!-- 4. Protetyka -->
+        <div class="service-card">
+          <div class="service-card-img-wrap">
+            <img src="images/service-prosthetics.webp" alt="Protetyka" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <svg class="service-icon" width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M5 10c0-3 2.5-5 5-5 1.5 0 2.8.6 3.8 1.6A4.9 4.9 0 0 1 18 5c2.5 0 5 2 5 5 0 2-.8 3.8-2.2 5.2L14 22l-6.8-6.8C5.8 13.8 5 12 5 10Z" stroke="#E8601C" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="service-title">Protetyka</h3>
+            <p class="service-desc">Korony, mosty i protezy dopasowane indywidualnie. Przywracamy pełną funkcję i estetykę.</p>
+          </div>
+        </div>
+
+        <!-- 5. Profilaktyka -->
+        <div class="service-card">
+          <div class="service-card-img-wrap">
+            <img src="images/service-prevention.webp" alt="Profilaktyka" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <svg class="service-icon" width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="14" cy="14" r="10" stroke="#E8601C" stroke-width="2"/>
+              <path d="M9 14l3.5 3.5L19 10" stroke="#E8601C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="service-title">Profilaktyka</h3>
+            <p class="service-desc">Przeglądy, skaling i piaskowanie. Regularna opieka to najlepsza inwestycja w zdrowy uśmiech.</p>
+          </div>
+        </div>
+
+        <!-- 6. Endodoncja -->
+        <div class="service-card">
+          <div class="service-card-img-wrap">
+            <img src="images/service-endodontics.webp" alt="Endodoncja" class="service-card-img">
+          </div>
+          <div class="service-card-body">
+            <svg class="service-icon" width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M10 4h8l1 6H9L10 4Z" stroke="#E8601C" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M9 10l-1 14h4l2-8 2 8h4L19 10" stroke="#E8601C" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+            <h3 class="service-title">Endodoncja</h3>
+            <p class="service-desc">Leczenie kanałowe pod mikroskopem. Ratujemy zęby, które inni uważają za nie do uratowania.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Full-width "see all" banner -->
+      <div class="service-all-banner">
+        <div class="service-all-text">
+          <p class="service-all-eyebrow">Pełna oferta</p>
+          <h3 class="service-all-title">Zobacz wszystkie usługi</h3>
+        </div>
+        <a href="#cennik" class="service-all-btn">
+          Sprawdź cennik
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="dlaczego-my" class="why-us-section section-padding">
+    <div class="why-us-deco-circle" aria-hidden="true"></div>
+    <div class="why-us-inner">
+
+      <!-- LEFT: Badge + heading + stats -->
+      <div class="why-us-left">
+
+        <span class="why-us-badge">Dlaczego my</span>
+
+        <h2 class="why-us-heading">
+          Dentysta, na<br>
+          którego Cię stać
+        </h2>
+
+        <p class="why-us-desc">
+          Wierzymy, że każdy zasługuje na zdrowy uśmiech.
+          Dlatego oferujemy przystępne ceny, elastyczne terminy
+          i opiekę bez pośpiechu.
+        </p>
+
+        <!-- Stats grid -->
+        <div class="why-us-stats">
+          <div class="why-us-stat">
+            <span class="stat-number" data-target="500" data-suffix="+">0+</span>
+            <span class="stat-label">Zadowolonych pacjentów</span>
+          </div>
+          <div class="why-us-stat">
+            <span class="stat-number" data-target="15" data-suffix=" lat">0 lat</span>
+            <span class="stat-label">Doświadczenia</span>
+          </div>
+          <div class="why-us-stat">
+            <span class="stat-number" data-target="2" data-suffix="">0</span>
+            <span class="stat-label">Lokalizacje — Kalisz i Turek</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Feature list -->
+      <div class="why-us-right">
+
+        <!-- Feature 1 -->
+        <div class="trust-feature">
+          <div class="trust-icon-wrap" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="9" stroke="#E8601C" stroke-width="1.75"/>
+              <path d="M8 12.5L10.5 15L16 9" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="trust-feature-body">
+            <p class="trust-feature-title">Bezbolesne leczenie</p>
+            <p class="trust-feature-desc">Stosujemy nowoczesne metody znieczulenia, aby każda wizyta była komfortowa.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="trust-feature">
+          <div class="trust-icon-wrap" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="4" width="18" height="17" rx="3" stroke="#E8601C" stroke-width="1.75"/>
+              <path d="M3 9H21" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round"/>
+              <path d="M8 2V5M16 2V5" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round"/>
+              <path d="M7 13H12M7 17H10" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="trust-feature-body">
+            <p class="trust-feature-title">Elastyczne terminy</p>
+            <p class="trust-feature-desc">Przyjmujemy również w soboty. Umawianie wizyt online przez ZnanyLekarz.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="trust-feature">
+          <div class="trust-icon-wrap" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 21v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="10" cy="8" r="3" stroke="#E8601C" stroke-width="1.75"/>
+              <path d="M23 21v-1a4 4 0 0 0-3-3.87" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="trust-feature-body">
+            <p class="trust-feature-title">Dla całej rodziny</p>
+            <p class="trust-feature-desc">Leczymy dzieci i dorosłych. Stworzyliśmy przyjazne miejsce dla każdego.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="trust-feature">
+          <div class="trust-icon-wrap" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="trust-feature-body">
+            <p class="trust-feature-title">Nowoczesny sprzęt</p>
+            <p class="trust-feature-desc">Cyfrowe RTG, mikroskop stomatologiczny i system CAD/CAM na miejscu.</p>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="trust-feature">
+          <div class="trust-icon-wrap" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7L12 2Z" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9 12.5L11 14.5L15 10" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="trust-feature-body">
+            <p class="trust-feature-title">Przejrzyste ceny</p>
+            <p class="trust-feature-desc">Zawsze informujemy o kosztach przed leczeniem. Bez ukrytych opłat.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="zespol" class="team-section section-padding">
+
+    <!-- Section header -->
+    <div class="team-header">
+      <span class="team-badge">Nasz zespół</span>
+      <h2 class="team-heading">Poznaj swoich lekarzy</h2>
+      <p class="team-subtext">
+        Nasi specjaliści łączą wieloletnie doświadczenie z indywidualnym
+        podejściem do każdego pacjenta.
+      </p>
+    </div>
+
+    <!-- Team grid -->
+    <div class="team-grid">
+
+      <!-- Card 1 — Anna Kowalska -->
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <div class="accent-circle accent-circle-orange" aria-hidden="true"></div>
+          <img src="images/doctor-1.webp" alt="dr n. med. Anna Kowalska" class="team-photo-placeholder">
+        </div>
+        <p class="team-name">dr n. med. Anna Kowalska</p>
+        <div class="team-name-sep" aria-hidden="true"></div>
+        <p class="team-specialty">Implantologia, Chirurgia</p>
+      </div>
+
+      <!-- Card 2 — Marek Nowak -->
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <div class="accent-circle accent-circle-navy" aria-hidden="true"></div>
+          <img src="images/doctor-2.webp" alt="lek. dent. Marek Nowak" class="team-photo-placeholder">
+        </div>
+        <p class="team-name">lek. dent. Marek Nowak</p>
+        <div class="team-name-sep" aria-hidden="true"></div>
+        <p class="team-specialty">Ortodoncja</p>
+      </div>
+
+      <!-- Card 3 — Katarzyna Wiśniewska -->
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <div class="accent-circle accent-circle-orange" aria-hidden="true"></div>
+          <img src="images/doctor-3.webp" alt="lek. dent. Katarzyna Wiśniewska" class="team-photo-placeholder">
+        </div>
+        <p class="team-name">lek. dent. Katarzyna Wiśniewska</p>
+        <div class="team-name-sep" aria-hidden="true"></div>
+        <p class="team-specialty">Stomatologia dziecięca</p>
+      </div>
+
+      <!-- Card 4 — Piotr Zając -->
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <div class="accent-circle accent-circle-navy" aria-hidden="true"></div>
+          <img src="images/doctor-4.jpg" alt="dr Piotr Zając" class="team-photo-placeholder">
+        </div>
+        <p class="team-name">dr Piotr Zając</p>
+        <div class="team-name-sep" aria-hidden="true"></div>
+        <p class="team-specialty">Endodoncja, Protetyka</p>
+      </div>
+
+      <!-- Card 5 — Ewa Kamińska -->
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <div class="accent-circle accent-circle-orange" aria-hidden="true"></div>
+          <img src="images/doctor-5.webp" alt="lek. dent. Ewa Kamińska" class="team-photo-placeholder">
+        </div>
+        <p class="team-name">lek. dent. Ewa Kamińska</p>
+        <div class="team-name-sep" aria-hidden="true"></div>
+        <p class="team-specialty">Estetyka, Wybielanie</p>
+      </div>
+
+      <!-- Card 6 — See all -->
+      <a href="#" class="team-card team-card-more">
+        <div class="team-photo-wrap">
+          <div class="accent-circle accent-circle-navy" aria-hidden="true"></div>
+          <div class="team-photo-placeholder team-photo-more">+</div>
+        </div>
+        <p class="team-name">Zobacz cały zespół</p>
+        <div class="team-name-sep" aria-hidden="true"></div>
+        <p class="team-specialty">6 specjalistów</p>
+      </a>
+
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="team-footer">
+      <p class="team-footer-text">Chcesz wiedzieć więcej o naszym zespole?</p>
+      <a href="#" class="btn-primary">Poznaj nas bliżej</a>
+    </div>
+
+  </section>
+
+  <!-- TRANSFORMATIONS -->
+  <section id="metamorfozy" class="transformations-section section-padding">
+
+    <!-- Section header -->
+    <div class="transformations-header">
+      <span class="transformations-badge">Metamorfozy</span>
+      <h2 class="transformations-heading">
+        Prawdziwe rezultaty<br>naszych pacjentów
+      </h2>
+      <p class="transformations-subtext">
+        Każdy uśmiech ma swoją historię.
+        Poznaj efekty leczenia naszych pacjentów.
+      </p>
+    </div>
+
+    <!-- Featured large card -->
+    <div class="transformation-featured-card" id="transformation-featured">
+
+      <!-- Left: stacked before/after -->
+      <div class="before-after-stack">
+        <div class="ba-placeholder">
+          <img src="images/before-1.webp" alt="Przed leczeniem" class="ba-img">
+          <span class="ba-label ba-label-przed">PRZED</span>
+        </div>
+        <div class="ba-divider">&amp;</div>
+        <div class="ba-placeholder">
+          <img src="images/after-1.webp" alt="Po leczeniu" class="ba-img">
+          <span class="ba-label ba-label-po">PO</span>
+        </div>
+      </div>
+
+      <!-- Right: patient story -->
+      <div class="featured-story">
+        <p class="card-category">Invisalign &amp; Wybielanie</p>
+        <h3 class="featured-story-title">Historia pacjenta &mdash; odbudowane zaufanie do uśmiechu</h3>
+        <p class="featured-story-excerpt">
+          Przez lata unikałam zdjęć i zakrywałam usta podczas rozmowy.
+          Po leczeniu ortodontycznym i wybielaniu w tej klinice moje życie
+          naprawdę się zmieniło. Polecam każdemu.
+        </p>
+        <div class="featured-patient-row">
+          <div class="featured-patient-avatar" aria-hidden="true"><img src="images/review-featured.webp" alt="" class="avatar-img"></div>
+          <span class="featured-patient-label">Pacjentka, 34 lata</span>
+        </div>
+        <a href="#" class="btn-outline">Czytaj więcej historii</a>
+      </div>
+
+    </div>
+
+    <!-- Small cards grid -->
+    <div class="transformation-small-grid" id="transformation-small-grid">
+
+      <!-- Card B1 — Invisalign -->
+      <div class="transformation-small-card">
+        <div class="before-after-stack">
+          <div class="ba-placeholder">
+            <img src="images/before-2.webp" alt="Przed leczeniem" class="ba-img">
+            <span class="ba-label ba-label-przed">PRZED</span>
+          </div>
+          <div class="ba-divider ba-divider--small">&amp;</div>
+          <div class="ba-placeholder">
+            <img src="images/after-2.webp" alt="Po leczeniu" class="ba-img">
+            <span class="ba-label ba-label-po">PO</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-category">Invisalign</p>
+          <p class="small-card-title">Aparat niewidoczny &mdash; historia dorosłego pacjenta</p>
+          <p class="small-card-excerpt">Od zawsze marzyłem o prostych zębach, ale bałem się tradycyjnego aparatu. Invisalign zmienił wszystko.</p>
+        </div>
+      </div>
+
+      <!-- Card B2 — Implanty -->
+      <div class="transformation-small-card">
+        <div class="before-after-stack">
+          <div class="ba-placeholder">
+            <img src="images/before-3.webp" alt="Przed leczeniem" class="ba-img">
+            <span class="ba-label ba-label-przed">PRZED</span>
+          </div>
+          <div class="ba-divider ba-divider--small">&amp;</div>
+          <div class="ba-placeholder">
+            <img src="images/after-3.webp" alt="Po leczeniu" class="ba-img">
+            <span class="ba-label ba-label-po">PO</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-category">Implanty</p>
+          <p class="small-card-title">Uzupełnienie braku zębowego po wypadku</p>
+          <p class="small-card-excerpt">Wypadek pozbawił mnie przedniego zęba. Implant wyglądał i czuł się jak prawdziwy ząb od pierwszego dnia.</p>
+        </div>
+      </div>
+
+      <!-- Card B3 — Protetyka -->
+      <div class="transformation-small-card">
+        <div class="before-after-stack">
+          <div class="ba-placeholder">
+            <img src="images/before-2.webp" alt="Przed leczeniem" class="ba-img">
+            <span class="ba-label ba-label-przed">PRZED</span>
+          </div>
+          <div class="ba-divider ba-divider--small">&amp;</div>
+          <div class="ba-placeholder">
+            <img src="images/after-2.webp" alt="Po leczeniu" class="ba-img">
+            <span class="ba-label ba-label-po">PO</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-category">Protetyka</p>
+          <p class="small-card-title">Mostek &mdash; powrót do normalnego życia</p>
+          <p class="small-card-excerpt">Problemy z żuciem wpływały na całe moje życie. Protetyka przywróciła mi komfort, o którym zapomniałem.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="transformations-footer">
+      <p class="transformations-footer-text">Masz pytania dotyczące swojego leczenia?</p>
+      <a href="#kontakt" class="btn-primary">Umów bezpłatną konsultację</a>
+    </div>
+
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="opinie" class="reviews-section section-padding">
+
+    <!-- Section header -->
+    <div class="reviews-header">
+      <span class="reviews-badge">Opinie pacjentów</span>
+      <h2 class="reviews-heading">Co mówią nasi pacjenci</h2>
+      <p class="reviews-subtext">
+        Zaufało nam ponad 500 pacjentów.
+        Przeczytaj ich opinie i przekonaj się sam.
+      </p>
+      <!-- Google rating summary -->
+      <div class="google-rating-row" aria-label="Ocena 4.9 na 5 w Google, 127 opinii">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="11" cy="11" r="11" fill="#4285F4"/>
+          <path d="M11.3 10.3H15v1.4h-1.4v1.9c-.7.4-1.5.6-2.3.6-2.3 0-4-1.7-4-3.9s1.7-3.9 4-3.9c1 0 2 .4 2.7 1l-.9.9c-.5-.4-1.1-.6-1.8-.6-1.4 0-2.6 1.1-2.6 2.7s1.2 2.7 2.6 2.7c.7 0 1.3-.2 1.7-.6v-1.1H11.3v-1.2Z" fill="white"/>
+        </svg>
+        <span class="google-rating-score">4.9 / 5 na Google</span>
+        <div class="google-rating-stars" aria-hidden="true">
+          <svg class="star-icon" width="20" height="20" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+          <svg class="star-icon" width="20" height="20" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+          <svg class="star-icon" width="20" height="20" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+          <svg class="star-icon" width="20" height="20" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+          <svg class="star-icon" width="20" height="20" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+        </div>
+        <span class="google-rating-count">(127 opinii)</span>
+      </div>
+    </div>
+
+    <!-- Featured large review -->
+    <div class="featured-review" id="reviews-featured">
+      <span class="review-quote-mark" aria-hidden="true">&ldquo;</span>
+      <!-- Stars above text -->
+      <div class="featured-review-stars" aria-label="5 gwiazdek">
+        <svg class="star-icon" width="24" height="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+        <svg class="star-icon" width="24" height="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+        <svg class="star-icon" width="24" height="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+        <svg class="star-icon" width="24" height="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+        <svg class="star-icon" width="24" height="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+      </div>
+      <p class="featured-review-text">
+        Bałam się dentysty od dziecka. W tej klinice po raz pierwszy poczułam się bezpiecznie.
+        Personel jest wyjątkowo cierpliwy, a leczenie przebiegło bez żadnego bólu.
+        Szczerze polecam każdemu, kto się boi wizyty u dentysty.
+      </p>
+      <div class="featured-review-footer">
+        <div class="featured-reviewer-info">
+          <div class="featured-reviewer-avatar" aria-hidden="true"><img src="images/review-featured.webp" alt="" class="avatar-img"></div>
+          <div>
+            <p class="featured-reviewer-name">Monika W.</p>
+            <p class="featured-reviewer-location">Leczenie kanałowe, Kalisz</p>
+          </div>
+        </div>
+        <span class="featured-treatment-pill">Endodoncja</span>
+      </div>
+    </div>
+
+    <!-- Reviews grid — 6 cards -->
+    <div class="reviews-grid" id="reviews-grid">
+
+      <!-- Card 1 — Tomasz K. -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-card-stars" aria-label="5 gwiazdek">
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+          </div>
+          <span class="treatment-tag">Implantologia</span>
+        </div>
+        <p class="review-card-text">Polecam z całego serca. Implant wyglądał jak prawdziwy ząb od pierwszego dnia. Profesjonalna obsługa na każdym etapie.</p>
+        <div class="review-card-footer">
+          <div class="review-card-avatar" aria-hidden="true"><img src="images/review-1.webp" alt="" class="avatar-img"></div>
+          <div>
+            <p class="review-card-name">Tomasz K.</p>
+            <p class="review-card-treatment-label">Implantologia</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 — Mama Zosi -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-card-stars" aria-label="5 gwiazdek">
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+          </div>
+          <span class="treatment-tag">Dzieci</span>
+        </div>
+        <p class="review-card-text">Córka bała się dentysty, ale tutaj podeszli do niej z taką cierpliwością, że teraz sama prosi o wizytę.</p>
+        <div class="review-card-footer">
+          <div class="review-card-avatar" aria-hidden="true"><img src="images/review-2.webp" alt="" class="avatar-img"></div>
+          <div>
+            <p class="review-card-name">Mama Zosi, 7 lat</p>
+            <p class="review-card-treatment-label">Stomatologia dziecięca</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 — Karolina M. -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-card-stars" aria-label="5 gwiazdek">
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+          </div>
+          <span class="treatment-tag">Wybielanie</span>
+        </div>
+        <p class="review-card-text">Wybielanie zębów &mdash; efekt przeszedł moje oczekiwania. Już po pierwszej wizycie widać ogromną różnicę.</p>
+        <div class="review-card-footer">
+          <div class="review-card-avatar" aria-hidden="true"><img src="images/review-3.webp" alt="" class="avatar-img"></div>
+          <div>
+            <p class="review-card-name">Karolina M.</p>
+            <p class="review-card-treatment-label">Wybielanie</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 — Michał P. -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-card-stars" aria-label="5 gwiazdek">
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+          </div>
+          <span class="treatment-tag">Ortodoncja</span>
+        </div>
+        <p class="review-card-text">Aparat Invisalign zmienił moje życie. Dyskretny, wygodny, a efekty po roku leczenia są niesamowite.</p>
+        <div class="review-card-footer">
+          <div class="review-card-avatar" aria-hidden="true"><img src="images/review-4.webp" alt="" class="avatar-img"></div>
+          <div>
+            <p class="review-card-name">Michał P.</p>
+            <p class="review-card-treatment-label">Ortodoncja</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 — Agnieszka R. -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-card-stars" aria-label="5 gwiazdek">
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+          </div>
+          <span class="treatment-tag">Endodoncja</span>
+        </div>
+        <p class="review-card-text">Przyszłam z bólem zęba w piątek po południu. Przyjęli mnie tego samego dnia. Szybko, sprawnie i bez bólu.</p>
+        <div class="review-card-footer">
+          <div class="review-card-avatar" aria-hidden="true"><img src="images/review-5.jpg" alt="" class="avatar-img"></div>
+          <div>
+            <p class="review-card-name">Agnieszka R.</p>
+            <p class="review-card-treatment-label">Endodoncja</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 — Bartosz L. (4 stars) -->
+      <div class="review-card">
+        <div class="review-card-top">
+          <div class="review-card-stars" aria-label="4 gwiazdki">
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+            <svg class="star-icon star-icon-empty" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 1.5L11.09 6.26L16.5 6.93L12.75 10.47L13.68 15.86L9 13.26L4.32 15.86L5.25 10.47L1.5 6.93L6.91 6.26L9 1.5Z"/></svg>
+          </div>
+          <span class="treatment-tag">Profilaktyka</span>
+        </div>
+        <p class="review-card-text">Bardzo dobra klinika. Ceny przystępne, lekarze kompetentni. Jedyne minus to czasem trzeba poczekać na termin.</p>
+        <div class="review-card-footer">
+          <div class="review-card-avatar" aria-hidden="true"><img src="images/review-6.webp" alt="" class="avatar-img"></div>
+          <div>
+            <p class="review-card-name">Bartosz L.</p>
+            <p class="review-card-treatment-label">Profilaktyka</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="reviews-footer">
+      <p class="reviews-footer-text">Przeczytaj więcej opinii na Google</p>
+      <a href="#" class="btn-outline reviews-google-btn">
+        <svg width="16" height="16" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="11" cy="11" r="11" fill="#4285F4"/>
+          <path d="M11.3 10.3H15v1.4h-1.4v1.9c-.7.4-1.5.6-2.3.6-2.3 0-4-1.7-4-3.9s1.7-3.9 4-3.9c1 0 2 .4 2.7 1l-.9.9c-.5-.4-1.1-.6-1.8-.6-1.4 0-2.6 1.1-2.6 2.7s1.2 2.7 2.6 2.7c.7 0 1.3-.2 1.7-.6v-1.1H11.3v-1.2Z" fill="white"/>
+        </svg>
+        Zobacz wszystkie opinie
+      </a>
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq-section section-padding">
+
+    <!-- Two-column layout -->
+    <div class="faq-inner">
+
+      <!-- LEFT: Intro + contact card -->
+      <div class="faq-left">
+        <span class="faq-badge">FAQ</span>
+        <h2 class="faq-heading">Najczęściej zadawane pytania</h2>
+        <p class="faq-subtext">
+          Nie znalazłeś odpowiedzi na swoje pytanie?
+          Skontaktuj się z nami bezpośrednio.
+        </p>
+
+        <!-- Contact nudge card -->
+        <div class="faq-contact-card">
+          <div class="faq-contact-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="faq-contact-title">Zadzwoń do nas</p>
+          <p class="faq-contact-subtitle">Odpowiemy na każde pytanie</p>
+          <p class="faq-contact-phone">+48 000 000 000</p>
+          <p class="faq-contact-or">lub napisz:</p>
+          <p class="faq-contact-email">kontakt@klinika.pl</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: Accordion -->
+      <div class="faq-right">
+        <div class="faq-list">
+
+          <!-- Q1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">Czy leczenie u dentysty boli?</span>
+              <div class="faq-toggle" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="9" y="2" width="2" height="16" rx="1" fill="currentColor"/>
+                  <rect x="2" y="9" width="16" height="2" rx="1" fill="currentColor"/>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer" role="region">
+              <p class="faq-answer-text">Stosujemy nowoczesne metody znieczulenia, które sprawiają, że większość zabiegów jest całkowicie bezbolesna. Przed każdym leczeniem dokładnie informujemy pacjenta o tym, czego może się spodziewać.</p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">Jak umówić wizytę?</span>
+              <div class="faq-toggle" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="9" y="2" width="2" height="16" rx="1" fill="currentColor"/>
+                  <rect x="2" y="9" width="16" height="2" rx="1" fill="currentColor"/>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer" role="region">
+              <p class="faq-answer-text">Wizytę można umówić przez platformę ZnanyLekarz.pl, telefonicznie lub przez formularz kontaktowy na naszej stronie. Staramy się proponować terminy w ciągu 48 godzin.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">Czy przyjmujecie dzieci?</span>
+              <div class="faq-toggle" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="9" y="2" width="2" height="16" rx="1" fill="currentColor"/>
+                  <rect x="2" y="9" width="16" height="2" rx="1" fill="currentColor"/>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer" role="region">
+              <p class="faq-answer-text">Tak, leczymy pacjentów w każdym wieku &mdash; od pierwszego ząbka. Nasz gabinet jest przyjazny dzieciom, a lekarze mają doświadczenie w pracy z najmłodszymi pacjentami.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">Ile kosztuje implant zębowy?</span>
+              <div class="faq-toggle" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="9" y="2" width="2" height="16" rx="1" fill="currentColor"/>
+                  <rect x="2" y="9" width="16" height="2" rx="1" fill="currentColor"/>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer" role="region">
+              <p class="faq-answer-text">Cena implantu zależy od producenta i zakresu leczenia. Orientacyjny koszt to 3000&ndash;5000 zł za jeden implant. Dokładną wycenę przygotowujemy po bezpłatnej konsultacji.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">Czy oferujecie płatność ratalną?</span>
+              <div class="faq-toggle" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="9" y="2" width="2" height="16" rx="1" fill="currentColor"/>
+                  <rect x="2" y="9" width="16" height="2" rx="1" fill="currentColor"/>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer" role="region">
+              <p class="faq-answer-text">Tak, współpracujemy z systemami ratalnym, które umożliwiają rozłożenie kosztów leczenia na wygodne miesięczne raty. Zapytaj nas o szczegóły podczas wizyty.</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">Jak długo trwa leczenie aparatem ortodontycznym?</span>
+              <div class="faq-toggle" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="9" y="2" width="2" height="16" rx="1" fill="currentColor"/>
+                  <rect x="2" y="9" width="16" height="2" rx="1" fill="currentColor"/>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer" role="region">
+              <p class="faq-answer-text">Czas leczenia zależy od stopnia wady zgryzu i wynosi zazwyczaj od 12 do 24 miesięcy. W przypadku aparatu Invisalign może to być nawet krócej &mdash; od 6 miesięcy.</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">Czy mogę przyjść bez skierowania?</span>
+              <div class="faq-toggle" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="9" y="2" width="2" height="16" rx="1" fill="currentColor"/>
+                  <rect x="2" y="9" width="16" height="2" rx="1" fill="currentColor"/>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer" role="region">
+              <p class="faq-answer-text">Tak, jesteśmy kliniką prywatną &mdash; nie wymagamy skierowania. Wystarczy umówić wizytę i przyjść w wyznaczonym terminie.</p>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text">Czy macie gabinety w kilku lokalizacjach?</span>
+              <div class="faq-toggle" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="9" y="2" width="2" height="16" rx="1" fill="currentColor"/>
+                  <rect x="2" y="9" width="16" height="2" rx="1" fill="currentColor"/>
+                </svg>
+              </div>
+            </button>
+            <div class="faq-answer" role="region">
+              <p class="faq-answer-text">Tak, przyjmujemy pacjentów w dwóch lokalizacjach: w Kaliszu i w Turku. Obie kliniki oferują pełen zakres usług.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="faq-footer">
+      <p class="faq-footer-text">Masz inne pytanie?</p>
+      <div class="faq-footer-buttons">
+        <a href="#kontakt" class="btn-outline">Formularz kontaktowy</a>
+        <a href="#kontakt" class="btn-primary">Umów wizytę</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CTA orange band separator -->
+  <div class="cta-orange-band" aria-hidden="true"></div>
+
+  <!-- CTA -->
+  <section id="umow-wizyte">
+
+    <!-- Decorative ring -->
+    <div class="cta-deco-ring" aria-hidden="true"></div>
+
+    <!-- Content wrapper -->
+    <div class="cta-inner">
+
+      <!-- LEFT: Text + trust items -->
+      <div class="cta-left" id="cta-left">
+        <span class="cta-badge">Umów wizytę</span>
+        <h2 class="cta-heading">
+          Zacznij swoją drogę<br>do zdrowego uśmiechu
+        </h2>
+        <p class="cta-subtext">
+          Pierwsza konsultacja jest bezpłatna.
+          Przyjmujemy pacjentów w Kaliszu i Turku.
+        </p>
+        <div class="cta-trust-list">
+          <div class="cta-trust-item">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="10" cy="10" r="10" fill="rgba(232,96,28,0.2)"/>
+              <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Bezpłatna pierwsza konsultacja</span>
+          </div>
+          <div class="cta-trust-item">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="10" cy="10" r="10" fill="rgba(232,96,28,0.2)"/>
+              <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Terminy dostępne w ciągu 48 godzin</span>
+          </div>
+          <div class="cta-trust-item">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="10" cy="10" r="10" fill="rgba(232,96,28,0.2)"/>
+              <path d="M5.5 10.5L8.5 13.5L14.5 7" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Przyjmujemy w soboty</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Booking card -->
+      <div class="cta-booking-card" id="cta-card">
+
+        <!-- Location picker -->
+        <p class="cta-card-label">Wybierz lokalizację</p>
+        <div class="location-grid">
+          <button class="location-btn active" data-location="kalisz">Kalisz</button>
+          <button class="location-btn" data-location="turek">Turek</button>
+        </div>
+
+        <hr class="cta-divider" />
+
+        <!-- Booking methods -->
+        <p class="cta-card-sublabel">Jak chcesz się umówić?</p>
+        <a href="#" class="booking-btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="17" rx="3" stroke="white" stroke-width="1.75"/>
+            <path d="M3 9H21" stroke="white" stroke-width="1.75" stroke-linecap="round"/>
+            <path d="M8 2V5M16 2V5" stroke="white" stroke-width="1.75" stroke-linecap="round"/>
+          </svg>
+          Umów przez ZnanyLekarz.pl
+        </a>
+        <button class="booking-btn-secondary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z" stroke="#1B2D5B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Zadzwoń: +48 000 000 000
+        </button>
+
+        <!-- Reassurance -->
+        <p class="cta-reassurance">Bezpłatna konsultacja &bull; Bez kolejek &bull; Potwierdzenie SMS</p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <!-- noindex tag is present in <head>. Remove before going live. -->
+  <footer id="footer">
+
+    <!-- PART A — Main footer body -->
+    <div class="footer-inner">
+      <div class="footer-main">
+
+        <!-- Column 1 — Brand -->
+        <div class="footer-col">
+          <a href="#" class="footer-logo" aria-label="Strona główna">
+            <span class="footer-logo-text">uśmiech</span>
+            <svg class="logo-icon" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="14" cy="14" r="13" fill="#E8601C"/>
+              <path d="M9 10.5C9 8.567 10.567 7 12.5 7H15.5C17.433 7 19 8.567 19 10.5C19 11.74 18.37 12.83 17.42 13.48C17.8 14.17 18 14.96 18 15.8C18 18.12 16.5 20 14 20C11.5 20 10 18.12 10 15.8C10 14.96 10.2 14.17 10.58 13.48C9.63 12.83 9 11.74 9 10.5Z" fill="white"/>
+            </svg>
+          </a>
+          <p class="footer-tagline">Nowoczesna stomatologia z ludzką twarzą.</p>
+          <!-- Social icons -->
+          <div class="footer-socials">
+            <a href="#" class="footer-social-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="white" stroke-width="1.75"/>
+                <circle cx="12" cy="12" r="4" stroke="white" stroke-width="1.75"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="white"/>
+              </svg>
+            </a>
+            <a href="#" class="footer-social-btn" aria-label="Google">
+              <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="11" cy="11" r="10" stroke="white" stroke-width="1.75"/>
+                <path d="M11.3 10.3H15v1.4h-1.4v1.9c-.7.4-1.5.6-2.3.6-2.3 0-4-1.7-4-3.9s1.7-3.9 4-3.9c1 0 2 .4 2.7 1l-.9.9c-.5-.4-1.1-.6-1.8-.6-1.4 0-2.6 1.1-2.6 2.7s1.2 2.7 2.6 2.7c.7 0 1.3-.2 1.7-.6v-1.1H11.3v-1.2Z" fill="white"/>
+              </svg>
+            </a>
+          </div>
+          <p class="footer-hours">Gabinety czynne pon&ndash;pt 8:00&ndash;20:00, sob 9:00&ndash;14:00</p>
+        </div>
+
+        <!-- Column 2 — Navigation -->
+        <div class="footer-col">
+          <p class="footer-col-heading">Menu</p>
+          <nav aria-label="Stopka — menu">
+            <a href="#" class="footer-link">Strona główna</a>
+            <a href="#o-nas" class="footer-link">O nas</a>
+            <a href="#uslugi" class="footer-link">Usługi</a>
+            <a href="#zespol" class="footer-link">Zespół</a>
+            <a href="#cennik" class="footer-link">Cennik</a>
+            <a href="#kontakt" class="footer-link">Kontakt</a>
+          </nav>
+        </div>
+
+        <!-- Column 3 — Services -->
+        <div class="footer-col">
+          <p class="footer-col-heading">Usługi</p>
+          <nav aria-label="Stopka — usługi">
+            <a href="#uslugi" class="footer-link">Implantologia</a>
+            <a href="#uslugi" class="footer-link">Ortodoncja</a>
+            <a href="#uslugi" class="footer-link">Wybielanie</a>
+            <a href="#uslugi" class="footer-link">Protetyka</a>
+            <a href="#uslugi" class="footer-link">Profilaktyka</a>
+            <a href="#uslugi" class="footer-link">Endodoncja</a>
+          </nav>
+        </div>
+
+        <!-- Column 4 — Contact -->
+        <div class="footer-col">
+          <p class="footer-col-heading">Kontakt</p>
+
+          <!-- Kalisz -->
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex-shrink:0; margin-top:2px;">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Z" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="9" r="2.5" stroke="#E8601C" stroke-width="1.75"/>
+            </svg>
+            <div>
+              <p class="footer-contact-city">Kalisz</p>
+              <p class="footer-contact-address">ul. Przykładowa 1, 62-800</p>
+            </div>
+          </div>
+
+          <!-- Turek -->
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex-shrink:0; margin-top:2px;">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Z" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="9" r="2.5" stroke="#E8601C" stroke-width="1.75"/>
+            </svg>
+            <div>
+              <p class="footer-contact-city">Turek</p>
+              <p class="footer-contact-address">ul. Przykładowa 2, 62-700</p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex-shrink:0; margin-top:2px;">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <a href="tel:+48000000000" class="footer-contact-link">+48 000 000 000</a>
+          </div>
+
+          <!-- Email -->
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex-shrink:0; margin-top:2px;">
+              <rect x="2" y="4" width="20" height="16" rx="3" stroke="#E8601C" stroke-width="1.75"/>
+              <path d="M2 8l10 6 10-6" stroke="#E8601C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <a href="mailto:kontakt@klinika.pl" class="footer-contact-link">kontakt@klinika.pl</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- PART B — Divider -->
+    <hr class="footer-divider" />
+
+    <!-- PART C — Bottom bar -->
+    <div class="footer-inner">
+      <div class="footer-bottom">
+        <p class="footer-bottom-text">&copy; 2025 Klinika Uśmiech. Wszelkie prawa zastrzeżone.</p>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link">Polityka prywatności</a>
+          <span class="footer-bottom-sep" aria-hidden="true">|</span>
+          <a href="#" class="footer-bottom-link">Regulamin</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Main JS -->
+  <script src="main.js" defer></script>
+</body>
+</html>

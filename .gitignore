@@ -1,0 +1,25 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# FFmpeg / encoding artifacts
+*.log
+ffmpeg2pass-*.log
+svtav1encpass1.log
+
+# Source / uncompressed videos (too large for git)
+assets/videos/hero1.mp4
+assets/videos/hero3.mp4
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
