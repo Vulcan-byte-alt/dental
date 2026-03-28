@@ -1,6 +1,22 @@
 // main.js — Dental Clinic Website
 
 /* =============================================
+   Hero video — fade in from poster when ready
+   ============================================= */
+(function () {
+  var video = document.querySelector('.hero-video');
+  if (!video) return;
+
+  function reveal() { video.classList.add('is-ready'); }
+
+  // canplay fires as soon as the browser has buffered enough to start
+  video.addEventListener('canplay', reveal, { once: true });
+
+  // Fallback: if video is already buffered (cached), fire immediately
+  if (video.readyState >= 3) reveal();
+})();
+
+/* =============================================
    Navbar — hide on scroll down / show on scroll up
             + light mode past hero
    ============================================= */
@@ -395,10 +411,10 @@
    Footer — smooth scroll for nav links
    ============================================= */
 (function () {
-  var footerLinks = document.querySelectorAll('.footer-link[href^="#"]');
-  if (!footerLinks.length) return;
+  var scrollLinks = document.querySelectorAll('.footer-link[href^="#"], .nav-link[href^="#"], .mobile-nav-link[href^="#"], .navbar-cta[href^="#"], .mobile-cta[href^="#"]');
+  if (!scrollLinks.length) return;
 
-  footerLinks.forEach(function (link) {
+  scrollLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
       var href = link.getAttribute('href');
       if (!href || href === '#') return;
@@ -407,6 +423,11 @@
       e.preventDefault();
       var offset = target.getBoundingClientRect().top + window.pageYOffset - 72;
       window.scrollTo({ top: offset, behavior: 'smooth' });
+      // Close mobile menu if open
+      var menu = document.getElementById('mobile-menu');
+      if (menu && menu.getAttribute('aria-hidden') === 'false') {
+        document.getElementById('hamburger').click();
+      }
     });
   });
 })();
@@ -415,7 +436,7 @@
    Navbar — active link via IntersectionObserver
    ============================================= */
 (function () {
-  const sectionIds = ['o-nas', 'uslugi', 'zespol', 'cennik', 'kontakt'];
+  const sectionIds = ['dlaczego-my', 'uslugi', 'zespol', 'metamorfozy', 'opinie', 'umow-wizyte'];
   const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
 
   function setActive(id) {

@@ -17,6 +17,9 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Preload hero video so it starts buffering immediately -->
+  <link rel="preload" href="assets/videos/hero.mp4" as="video" type="video/mp4">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -38,11 +41,11 @@
 
       <!-- Desktop nav links -->
       <nav class="navbar-links" aria-label="Główna nawigacja">
-        <a href="#o-nas" class="nav-link">O nas</a>
+        <a href="#dlaczego-my" class="nav-link">O nas</a>
         <a href="#uslugi" class="nav-link">Usługi</a>
         <a href="#zespol" class="nav-link">Zespół</a>
-        <a href="#cennik" class="nav-link">Cennik</a>
-        <a href="#kontakt" class="nav-link">Kontakt</a>
+        <a href="#uslugi" class="nav-link">Cennik</a>
+        <a href="#umow-wizyte" class="nav-link">Kontakt</a>
       </nav>
 
       <!-- Desktop CTA + Hamburger -->
@@ -66,11 +69,11 @@
     <!-- Mobile dropdown menu -->
     <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
       <nav class="mobile-nav" aria-label="Nawigacja mobilna">
-        <a href="#o-nas" class="mobile-nav-link">O nas</a>
+        <a href="#dlaczego-my" class="mobile-nav-link">O nas</a>
         <a href="#uslugi" class="mobile-nav-link">Usługi</a>
         <a href="#zespol" class="mobile-nav-link">Zespół</a>
-        <a href="#cennik" class="mobile-nav-link">Cennik</a>
-        <a href="#kontakt" class="mobile-nav-link">Kontakt</a>
+        <a href="#uslugi" class="mobile-nav-link">Cennik</a>
+        <a href="#umow-wizyte" class="mobile-nav-link">Kontakt</a>
         <div class="mobile-cta-wrap">
           <a href="#kontakt" class="btn-primary mobile-cta">Umów wizytę</a>
         </div>
@@ -83,7 +86,7 @@
 
     <!-- Background video -->
     <div class="hero-bg" aria-hidden="true">
-      <video class="hero-video" autoplay muted loop playsinline>
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="images/hero-poster.jpg">
         <source src="assets/videos/hero.mp4" type="video/mp4">
       </video>
       <div class="hero-bg-overlay"></div>

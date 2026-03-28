@@ -332,6 +332,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.hero-video.is-ready {
+  opacity: 1;
 }
 
 /* Overlay — ensures text is always readable over any footage */
