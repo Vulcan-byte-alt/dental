@@ -1,5 +1,6 @@
 // main.js — Dental Clinic Website
 
+
 /* =============================================
    Navbar — hide on scroll down / show on scroll up
             + light mode past hero
