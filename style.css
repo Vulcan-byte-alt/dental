@@ -822,19 +822,17 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-/* Decorative circle */
-.why-us-deco-circle {
+/* Dot grid — bottom left corner */
+.why-us-deco-dots {
   position: absolute;
-  right: -200px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 600px;
-  height: 600px;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.05);
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  height: 140px;
   pointer-events: none;
   z-index: 0;
 }
+
 
 .why-us-inner {
   display: flex;
