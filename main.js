@@ -1,22 +1,6 @@
 // main.js — Dental Clinic Website
 
 /* =============================================
-   Hero video — fade in from poster when ready
-   ============================================= */
-(function () {
-  var video = document.querySelector('.hero-video');
-  if (!video) return;
-
-  function reveal() { video.classList.add('is-ready'); }
-
-  // canplay fires as soon as the browser has buffered enough to start
-  video.addEventListener('canplay', reveal, { once: true });
-
-  // Fallback: if video is already buffered (cached), fire immediately
-  if (video.readyState >= 3) reveal();
-})();
-
-/* =============================================
    Navbar — hide on scroll down / show on scroll up
             + light mode past hero
    ============================================= */
