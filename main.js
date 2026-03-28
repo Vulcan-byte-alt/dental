@@ -402,9 +402,9 @@
     link.addEventListener('click', function (e) {
       var href = link.getAttribute('href');
       if (!href || href === '#') return;
+      e.preventDefault();
       var target = document.querySelector(href);
       if (!target) return;
-      e.preventDefault();
       var offset = target.getBoundingClientRect().top + window.pageYOffset - 72;
       window.scrollTo({ top: offset, behavior: 'smooth' });
       // Close mobile menu if open
