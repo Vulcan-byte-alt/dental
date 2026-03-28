@@ -240,10 +240,21 @@
 (function () {
   // Location toggle
   var locationBtns = document.querySelectorAll('.location-btn');
+  var zlBtn        = document.getElementById('cta-zl-btn');
+  var phoneBtn     = document.getElementById('cta-phone-btn');
+  var phoneText    = document.getElementById('cta-phone-text');
+  var addressEl    = document.getElementById('cta-location-address');
+
   locationBtns.forEach(function (btn) {
     btn.addEventListener('click', function () {
       locationBtns.forEach(function (b) { b.classList.remove('active'); });
       btn.classList.add('active');
+
+      // Swap content from data attributes
+      if (zlBtn)     zlBtn.href        = btn.dataset.zlHref;
+      if (phoneBtn)  phoneBtn.href     = btn.dataset.tel;
+      if (phoneText) phoneText.textContent = 'Zadzwoń: ' + btn.dataset.phone;
+      if (addressEl) addressEl.textContent = btn.dataset.address;
     });
   });
 

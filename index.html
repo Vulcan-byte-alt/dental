@@ -1039,15 +1039,24 @@
         <!-- Location picker -->
         <p class="cta-card-label">Wybierz lokalizację</p>
         <div class="location-grid">
-          <button class="location-btn active" data-location="kalisz">Kalisz</button>
-          <button class="location-btn" data-location="turek">Turek</button>
+          <button class="location-btn active" data-location="kalisz"
+            data-phone="+48 62 000 00 00"
+            data-tel="tel:+48620000000"
+            data-zl-href="#"
+            data-address="ul. Przykładowa 1, 62-800 Kalisz">Kalisz</button>
+          <button class="location-btn" data-location="turek"
+            data-phone="+48 63 000 00 00"
+            data-tel="tel:+48630000000"
+            data-zl-href="#"
+            data-address="ul. Przykładowa 2, 62-700 Turek">Turek</button>
         </div>
+        <p class="cta-location-address" id="cta-location-address">ul. Przykładowa 1, 62-800 Kalisz</p>
 
         <hr class="cta-divider" />
 
         <!-- Booking methods -->
         <p class="cta-card-sublabel">Jak chcesz się umówić?</p>
-        <a href="#" class="booking-btn-primary">
+        <a href="#" class="booking-btn-primary" id="cta-zl-btn">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <rect x="3" y="4" width="18" height="17" rx="3" stroke="white" stroke-width="1.75"/>
             <path d="M3 9H21" stroke="white" stroke-width="1.75" stroke-linecap="round"/>
@@ -1055,12 +1064,12 @@
           </svg>
           Umów przez ZnanyLekarz.pl
         </a>
-        <button class="booking-btn-secondary">
+        <a href="tel:+48620000000" class="booking-btn-secondary" id="cta-phone-btn">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z" stroke="#1B2D5B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          Zadzwoń: +48 000 000 000
-        </button>
+          <span id="cta-phone-text">Zadzwoń: +48 62 000 00 00</span>
+        </a>
 
         <!-- Reassurance -->
         <p class="cta-reassurance">Bezpłatna konsultacja &bull; Bez kolejek &bull; Potwierdzenie SMS</p>
